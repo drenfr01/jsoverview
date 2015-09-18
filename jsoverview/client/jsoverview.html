@@ -1,14 +1,22 @@
 <head>
-  <title>jsoverview</title>
+  <title>JS Overview</title>
+  <link rel="stylesheet"
+        href="/packages/neo_reveal-js/reveal.js/css/theme/default.css" 
+        id="theme"/>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+  {{> slideshow}}
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="slideshow">
+<div class="reveal">
+  <div class="slides">
+    <section>Intro Slide</section>
+    <section>
+      <section>Main Slide</section>
+      <section>Vertical Slide 1</section>
+    </section>
+  </div>
+</div>
 </template>
