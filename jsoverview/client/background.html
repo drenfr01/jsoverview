@@ -1,0 +1,180 @@
+<template name="background">
+<section>
+  <section>
+    <h3>Background</h3>
+  </section>
+  <section>
+    <h3>Origins</h3>
+    <hr>
+    <p class="fragment">
+    Written in "10 days" by Netscape engineer Brendan
+    Eich
+    </p>
+    <br>
+    <p class="fragment">
+    Originally named LiveScript, changed to JavaScript for marketing
+    </p>
+    <br>
+    <p class="fragment">
+    Designed as lightweight, simpler Java (similar to VB)
+    </p>
+  </section>
+  <section>
+    <h3>Browser Wars</h3>
+    <hr>
+    <p class="fragment">
+    JS was widely adopted in late 90s, with ES2 / ES3 gaining wide acceptance
+    </p>
+    <br>
+    <p class="fragment">
+    Microsoft, after crushing NetScape in late 90s, neglected JS development
+    in favor of native technologies
+    </p> 
+    <br>
+    <p class="fragment">
+    Netscape open sourced its browser code near the end, which was used to
+    start the Mozilla foundation
+    </p>
+    <br>
+    <p class="fragment">
+    Mozilla Firefox 1.0 released November 2004. Rapidly took market share
+    from IE6 ("eight worst tech product of all time")
+    </p>
+  </section>
+  <section>
+    <h3>Modern JavaScript</h3>
+    <hr>
+    <p>
+    Web 2.0, "The Dynamic Web", began with large scale deployment of AJAX 
+    </p>
+    <br>
+    <p>
+    Sites such as Gmail(2004), Google Maps (2005), Kayak (2005) adopted AJAX
+    <a href="http://adaptivepath.org/ideas/ajax-new-approach-web-applications/">
+      ("AJAX: A new Approach to web applications")
+    </a>
+    </p>
+    <br>
+    <p>
+    JQuery, released in 2006, made cross-platform development and AJAX much
+    simpler
+    </p>
+    <br>
+    <p>
+    <pre>
+      <code data-trim>
+        $("button").click(function(){
+            $.ajax({url: "demo_test.txt", success: function(result){
+                $("#div1").html(result);
+            }});
+        });
+      </code>
+    </pre>
+    </p>
+    <aside class="notes">
+      Upshot of JQuery is that developers could write far more complex
+      applications, because all JS didn't have to run and load before web page
+      rendered
+
+      Pega went with YUI (good competitive point to make, that YUI is now dead)
+    </aside>
+  </section>
+  <section>
+    <h3>Escaping the Browser</h3>
+    <hr>
+    <p>Until 2008, JS Engines were simple interpreters that read and executed
+    code</p>
+    <br>
+    <p>In ~2009, all major browsers except IE released new, dramatically faster
+    JS Engines</p>
+    <br>
+    <p>Google, notably, released the V8 Engine and open sourced it</p>
+  </section>
+  <section>
+    <p>Node JS, built on Chrome V8, released in 2009</p>
+    <br>
+    <p>"As an asynchronous event driven framework, Node.js is designed to build
+    scalable <b>network applications</b>"</p>
+    <br>
+    <p>MongoDB and Couch, document based JS for its query lanugage</p>
+    <br>
+    <p>PhoneGap / Cordova / React Mobile - provide JS APIs to access native
+    funcionality</p>
+    <br>
+    <p>Node quietly became default package manager and IoT service</p>
+    <aside class="notes">
+      Notice it didn't say web applications, it says network
+    </aside>
+  </section>
+  <section>
+    <h3>Building Apps Faster</h3>
+    <hr>
+    <p>JS code tended to lack structures / patterns ("script kiddies")</p>
+    <br>
+    <p>Explosion of JS libraries / frameworks since 2009</p>
+    <br>
+    <p>Repeatable and maintainable ways to build complex, dynamic apps </p>
+    <br>
+    <p>Rise of the "Single Page App", aka thick client</p>
+  </section>
+  <section>
+    <p>These libraries provide opinionated way to do common tasks and often
+    provide "plumbing"</p>
+    <br>
+    <p>Angular (2009), Backbone (2010), Ember (2011), Meteor (2012), React (2013)</p>
+  </section>
+  <section>
+    <h3>The All JS Stack</h3>
+    <hr>
+    <p>No need to switch languages in different layers</p>
+    <br>
+    <p>MEAN: Mongo, Angular, Express, Node for web</p>
+    <br>
+    <p>JSON for data transport, Grunt for build tools, Npm for packages,
+    testing frameworks, etc.</p>
+    <br>
+    <p>Node + Express is default way of creating an IoT</p>
+  </section>
+  <section>
+    <h3>What's special about JS right now?</h3>
+    <hr>
+    <p>Number of convergent streams</p>
+    <br>
+    <p>Evolution away from LAMP stack (default of web apps)</p>
+    <br>
+    <p>Return of thick client (can't rely on request-response)</p>
+    <br>
+    <p>Big change from stateless to stateful</p>
+    <br>
+    <p>Distributed computing with smartphones</p>
+    <aside class="notes">
+      websockets in lieu of statless HTTP requests
+    </aside>
+  </section>
+  <section>
+    <p>Only cross-platform solution (sometimes better than Native)</p>
+    <br>
+    <p>Heavily optimized due to Browser wars</p>
+    <br>
+    <p>ECMA 2015 (formery ES6) is dramatic update to JS</p>
+    <br>
+    <p>Robust tooling continually under development</p>
+    <br>
+    <p>No other stack has ever been this complete with one language </p>
+  </section>
+  <section>
+    <img
+           src="http://jktech.com/wp-content/themes/jkt/images/jkt-MEAN-Stack-Expertise.jpg"
+           width="500">
+  </section>
+  <section>
+    <blockquote>
+      "A change on part with Java's impact in the late 1990s...But for those
+      with customer facing, web-scale systems of engagement, the parallel and
+      lightweight nature of the JS stack will prove superior to traditional
+      stacks"
+    </blockquote>
+    <small>"The Dawn of Enterprise JavaScript" - Forrester</small>
+  </section>
+</section>
+</template>
